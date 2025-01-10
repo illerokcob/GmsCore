@@ -1,9 +1,6 @@
 name: Dependency Submission
 permissions:
   contents: write
-on:
-  push:
-    branches: [ 'master' ]
 
 jobs:
   dependency-submission:
