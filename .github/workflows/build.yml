@@ -52,5 +52,5 @@ jobs:
         uses: actions/upload-artifact@v4.6.0
         with:
           name: "microg-release.apk"
-          path: app/build/outputs/apk/debug/
+          path: build/outputs/apk/
   
