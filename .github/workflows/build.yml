@@ -50,3 +50,10 @@ jobs:
         run: "./gradlew assemble"
       - name: "Execute Gradle check"
         run: "./gradlew check"
+        
+      - name: "Upload a Build Artifact"
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: "microg-release.apk"
+          path: ${{ env.main_project_module }}/build/outputs/apk/release/
+  
