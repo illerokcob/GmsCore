@@ -46,11 +46,11 @@ jobs:
             fi
           done
       - name: "Execute Gradle assemble"
-        run: "./gradlew assembleDebug"
+        run: "./gradlew assembleVtmDefaultDebug"
         
       - name: "Upload a Build Artifact"
         uses: actions/upload-artifact@v4.6.0
         with:
-          name: "microg-release.apk"
-          path: play-services-core/build/outputs/apk/
+          name: "microg-release"
+          path: play-services-core/build/outputs/apk/vtmDefault/debug/
   
